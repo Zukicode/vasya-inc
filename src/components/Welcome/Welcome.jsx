@@ -1,6 +1,7 @@
 import styles from './Welcome.module.scss';
 
 import imageProfile from 'assets/image.jpg';
+import tank from 'assets/tank.png';
 
 export const Welcome = ({ toggleModal }) => {
 	return (
@@ -9,7 +10,8 @@ export const Welcome = ({ toggleModal }) => {
 			<div className={styles.backRound2}></div>
 
 			<div className={styles.image}>
-				<img src={imageProfile} alt='me' />
+				<img src={tank} alt='tank' className={styles.tank} />
+				<img src={imageProfile} alt='me' className={styles.me} />
 			</div>
 
 			<div className={styles.text}>
@@ -26,7 +28,7 @@ export const Welcome = ({ toggleModal }) => {
 					<button onClick={() => window.open('https://t.me/neYosip', '_blank')}>
 						<span className={styles.icon}>
 							<svg enableBackground='new 0 0 512 512' viewBox='0 0 512 512'>
-								<g id='comp_x5F_335-telegram'>
+								<g>
 									<g>
 										<path
 											d='    M477.805,102.98l-67.327,317.516c-5.08,22.41-18.326,27.984-37.15,17.431l-102.585-75.596l-49.497,47.607    c-5.477,5.478-10.06,10.061-20.617,10.061l7.37-104.479l190.129-171.805c8.268-7.37-1.792-11.454-12.848-4.083L150.233,287.633    l-101.19-31.672c-22.011-6.873-22.408-22.012,4.581-32.568L449.419,70.911C467.744,64.039,483.779,74.993,477.805,102.98z'

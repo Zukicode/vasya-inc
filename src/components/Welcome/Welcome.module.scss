@@ -56,6 +56,7 @@
 	.image {
 		transform: translateX(0px);
 		animation: firstScaleImage 3s;
+		position: relative;
 
 		@keyframes firstScaleImage {
 			from {
@@ -68,7 +69,21 @@
 			}
 		}
 
-		img {
+		.tank {
+			width: 150px;
+			position: absolute;
+			right: -51px;
+			bottom: -20px;
+			opacity: 1;
+			z-index: 10;
+			transform: rotate(10deg);
+
+			@media (max-width: 1000px) {
+				display: none;
+			}
+		}
+
+		.me {
 			width: 600px;
 			border-radius: 12px;
 			opacity: 0.6;
