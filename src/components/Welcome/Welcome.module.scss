@@ -54,6 +54,20 @@
 	}
 
 	.image {
+		transform: translateX(0px);
+		animation: firstScaleImage 3s;
+
+		@keyframes firstScaleImage {
+			from {
+				transform: translateX(-50px);
+				opacity: 0;
+			}
+			to {
+				transform: translateX(0);
+				opacity: 1;
+			}
+		}
+
 		img {
 			width: 600px;
 			border-radius: 12px;
@@ -69,6 +83,18 @@
 		display: flex;
 		flex-direction: column;
 		gap: 20px;
+		animation: firstScaleAnimation 3s;
+
+		@keyframes firstScaleAnimation {
+			from {
+				transform: translateX(50px);
+				opacity: 0;
+			}
+			to {
+				transform: translateX(0);
+				opacity: 1;
+			}
+		}
 
 		@media (max-width: 1100px) {
 			width: 100%;
