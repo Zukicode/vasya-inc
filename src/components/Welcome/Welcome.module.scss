@@ -54,7 +54,7 @@
 	}
 
 	.image {
-		transform: translateX(0px);
+		transform: translateX(0);
 		animation: firstScaleImage 3s;
 		position: relative;
 
@@ -99,6 +99,7 @@
 		flex-direction: column;
 		gap: 20px;
 		animation: firstScaleAnimation 3s;
+		transform: translateX(0);
 
 		@keyframes firstScaleAnimation {
 			from {

@@ -19,12 +19,8 @@ export const Snowfall = () => {
 			snowflake.style.animationDuration = Math.random() * 5 + 5 + 's';
 			snowflake.innerHTML = '.';
 			snowfallContainer.appendChild(snowflake);
-
-			snowflake.addEventListener('animationiteration', () => {
-				snowflake.style.left = Math.random() * 100 + 'vw';
-			});
 		}
 	}, []);
 
-	return <div class={'snowfall'} ref={snowRef}></div>;
+	return <div className={'snowfall'} ref={snowRef}></div>;
 };
